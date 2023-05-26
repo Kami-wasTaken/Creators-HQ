@@ -1,0 +1,14 @@
+navbar{
+    background: white;
+}
+
+body{
+    background: white;
+}
+
+.a_body_container img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin-top: 100px;
+}

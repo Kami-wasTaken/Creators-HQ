@@ -1,0 +1,19 @@
+.gallery_view{
+    background-color: white;
+    height: calc(100% - 250px);
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 0 12px;
+
+}
+
+.gallery_picture img{
+    width: 100%;
+}

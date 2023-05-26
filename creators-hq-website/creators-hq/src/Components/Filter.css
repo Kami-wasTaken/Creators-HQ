@@ -1,0 +1,238 @@
+
+
+.filter_frame{
+    display: grid;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.filter1 {
+    width: 40vw;
+    height: 45vh;
+    background-image: 
+    linear-gradient(
+        rgba(38, 70, 83, 0.72), 
+        rgba(38, 70, 83, 0.72)), 
+        url('../Assets/Iconography.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-bottom: 30px;
+
+}
+.filter2 {
+    width: 40vw;
+    height: 45vh;
+    background-image: 
+    linear-gradient(
+        rgba(38, 70, 83, 0.72), 
+        rgba(38, 70, 83, 0.72)), 
+        url('../Assets/Painting.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-bottom: 30px;
+
+}
+.filter3 {
+    width: 40vw;
+    height: 45vh;
+    background-image: 
+    linear-gradient(
+        rgba(38, 70, 83, 0.72), 
+        rgba(38, 70, 83, 0.72)), 
+        url('../Assets/Sculpture.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-bottom: 30px;
+
+}
+.filter4 {
+    width: 40vw;
+    height: 45vh;
+    background-image: 
+    linear-gradient(
+        rgba(38, 70, 83, 0.72), 
+        rgba(38, 70, 83, 0.72)), 
+        url('../Assets/Engraving.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-bottom: 30px;
+
+}
+
+.style_name{
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+.gallery_direct{
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--yellow);
+}
+
+.message_direct{
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--light-blue);
+    
+}
+
+.message_direct h3 {
+    color: var(--yellow);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gallery_direct h3 {
+    color: var(--light-blue);
+    font-size: 2rem;
+    text-align: center;;
+}
+
+.filter1:hover .style_name{
+    display: none;
+
+}
+
+.filter1:hover .filter1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.filter1:hover .message_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+
+    
+}
+
+.filter1:hover .gallery_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+    
+
+}
+
+.filter2:hover .style_name{
+    display: none;
+
+}
+
+.filter2:hover .filter2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.filter2:hover .message_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+
+    
+}
+
+.filter2:hover .gallery_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+    
+
+}
+
+.filter3:hover .style_name{
+    display: none;
+
+}
+
+.filter3:hover .filter3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.filter3:hover .message_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+
+    
+}
+
+.filter3:hover .gallery_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+    
+
+}
+
+.filter4:hover .style_name{
+    display: none;
+
+}
+
+.filter4:hover .filter4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.filter4:hover .message_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+
+    
+}
+
+.filter4:hover .gallery_direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 5s;
+    opacity: 1;
+    
+
+}

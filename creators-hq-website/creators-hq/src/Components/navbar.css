@@ -1,0 +1,149 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.nav_toggle_btn {
+    display: none;
+}
+.nav_container{
+    padding-top: 30px;
+    
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    
+}
+
+
+.nav_links a:hover {
+    color: #E66F51;
+}
+
+.active_nav {
+    color: #E66F51;
+}
+
+
+
+.web_title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #264653;
+}
+
+.login{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 118px;
+    height: 50px;
+    background: #264653;
+    border: 0.25px solid #000000;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.login_name{
+    color: white;
+    background-color: #264653;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* MEDIA QUERRIES (medium and small)>*/
+
+@media screen and (max-width: 1024px) {
+    .nav_toggle_btn{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        cursor: poiner;
+    }
+
+    
+    .nav_toggle_btn svg {
+        color: var(--dark-orange)
+    }
+    .nav_links {
+        position: absolute;
+        top: 120%;
+        right: 0;
+        gap: 0;
+        align-items: center;
+        justify-content: center;        
+        flex-direction: column;
+        animation: navAnimation 900ms ease forwards;
+        transform: rotateX(90deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+    .active_nav{
+        display: none;
+    }
+
+    .nav_links .orange_links{
+        height: 4rem;    
+        width: 10%;  
+        
+    }  
+
+    .login{
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 20px;
+        
+    }
+    
+    
+
+    @keyframes navAnimation {
+        to{
+            transform: rotateX(0);
+            opacity: 1;
+        }
+        
+    }
+
+    
+    .nav_links li a{
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .show_nav{
+        display: flex;
+    }
+    .hide_nav{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .web_title {
+        font-size: 1rem;
+    }
+
+    
+
+}

@@ -1,0 +1,50 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue : #264653;
+    --dark-orange : #E66F51;
+    --orange : #F3A261;
+    --yellow : #E9C46B;
+    --light-blue :#2B9D8E;
+    --very-light-blue: #DAEEEA;
+    --container-width-lg : 85%;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    background: var(--dark-blue);
+}
+
+.container {
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    margin-inline: auto;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    color: black;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+a{
+    color: #F3A261;
+}

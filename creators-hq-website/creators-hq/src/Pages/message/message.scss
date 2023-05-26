@@ -1,0 +1,235 @@
+.message_thread{
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow-y: hidden;
+    
+
+    
+}
+
+.message_header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 8rem;
+    padding-bottom: 0.2rem;
+    border: none;
+    border-bottom: 1px solid var(--dark-blue);
+    margin-bottom: 1rem;
+    h1{
+        font-size: 2.5rem;
+    }
+    .m_nav{
+        font-size: 1.1rem;
+        color: var(--dark-orange);
+        
+    }
+    
+
+    
+}
+
+.messages{
+    background-color: white;
+    height: calc(100% - 300px);
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+    .message{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #CACACA;
+        padding-bottom: 1rem;
+
+        .messageInfoSelf{
+            display: flex;
+            align-items: center;
+            padding-top: 0.8rem; 
+            
+            img{
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 100%;
+                margin-right: 5px;
+            }
+            p{
+                color: var(--light-blue);
+            }
+            
+
+        }
+
+        .messageInfoOther{
+            display: flex;
+            align-items: center;
+            padding-top: 0.8rem; 
+            
+            img{
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 100%;
+                margin-right: 5px;
+            }
+            p{
+                color: var(--dark-orange);
+            }
+            
+
+        }
+        .messageContent{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .message_text{
+                background-color: white;
+                margin-left: 46px;
+                
+            }
+            .image_container{
+                .uploaded_img{
+                    width: 40%;
+                }
+
+            }
+            
+            
+        }
+
+        
+    }
+}
+
+.input{
+    height: 50px;
+    background-color: var(--very-light-blue);
+    display: flex;
+    padding: 10px;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 360px;
+    input{
+        width: 100%;
+        background-color: var(--very-light-blue);
+        border: none;
+        outline: none;
+        
+        &::placeholder{
+            color: black;
+            font-family: Helvetica, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+    }
+
+    .send{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-right: 0.6rem;
+
+    }
+
+
+
+}
+
+.image_container{
+    display: flex;
+   img{
+    
+    object-fit: cover;
+   }
+}
+
+.comments_container{
+    max-height: 400px;
+    width: 100vw;
+    margin: 0px 2rem 0px 1rem;
+    border: solid 2px;
+    
+    
+    
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.comment_info{
+    display: flex;
+    img{
+        width: 30px;
+        height: 30px;
+       
+        
+        object-fit: cover;
+        border-radius: 100%;
+        
+    }
+    .comments_username{
+        margin-left: 5px;
+    }
+}
+
+.comments{
+    max-height: 75%;
+    min-height: 74%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.comments_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div{
+        display: flex;
+    }
+    form{
+        margin-right: 23px;
+    }
+}
+
+
+.comment_input{
+   
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    
+    
+    input{
+        
+        margin: 5px 5px 0px 5px;
+        padding: 10px;
+        border: solid 2px;
+        width: 90%
+    }
+
+    #send{
+        margin-bottom: 15px;
+        margin-right: 5px;
+        
+        
+    }
+}
+
+.comments_title{
+    padding: 7.5px;
+    font-size: 1.2rem;
+
+}
+
+.comments_header{
+    label{
+        width: 40px;
+    }
+}
